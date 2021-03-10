@@ -1,0 +1,194 @@
+body{
+  margin: 0 auto;
+}
+header {
+  background-color: #000;
+  width: auto;
+  height: 120px;
+}
+table{
+  margin: 0 auto;
+}
+ul{
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+.tfl{
+  border-collapse: collapse;
+  text-align: left;
+  text-indent: 40px;
+  border: 1px solid #d1d1d1;
+  width: 1000px;
+  line-height: 150%;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.hr{
+  border-spacing: 14px;
+  width: 1000px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 15px;
+}
+.tatle{
+  text-align: left;
+  width: 1000px;
+  height: 120px;
+}
+.w{
+  width: 124px;
+  height: 33px;
+  font-size: 16px;
+  color: #000;
+}
+.w:hover{
+  border: 1px solid#454545;
+  font-weight: bold;
+}
+.sw{
+  width: 200vw;
+  height: auto;
+  text-align: left;
+  font-size: 15px;
+  font-style: #000;
+}
+.h{
+  width: auto;
+  height: 120px;
+}
+td{
+  text-align: left;
+  font-size: 15px;
+}
+a{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+.margin{
+  margin-left: 40px;
+  margin-right: 40px;
+  align-content: center;
+}
+
+.content{
+  width: 1000px;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-content: center;
+  margin: 0 auto;
+
+}
+
+.r{
+  background-color: #f7f7f7;
+  border: 1px #d1d1d1;
+  text-indent: 15px;
+  height: 40px;
+
+}
+.l{
+  border-left: 1px;
+}
+.f1{
+  text-align: center;
+}
+.f2{
+  font-size: 12px;
+  color: #999;
+}
+.f3{
+  font-size: 12px;
+  color: #000;
+}
+.table1{
+  width:90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width:100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+$background: linear-gradient(to bottom, #405166 0%,#656f6f 100%);
+$red: #e55643 ;
+$green: #2b9f5e;
+$yellow: #f1c83c;
+$shadow: #533d4a;
+
+html{
+  height: 100%;
+}
+body{
+  font-family: 'Fjalla One', sans-serif;
+  background: $background;
+}
+
+.container{
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: block;
+  position: absolute;
+  max-width: 225px;
+}
+
+.button{
+  float: left;
+  position: relative;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-10deg);
+  color: $red;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+
+  span{
+    transform: skew(-10deg);
+    display: block;
+    float: left;
+    text-shadow: $shadow 1px 1px, $shadow 2px 2px, $shadow 3px 3px, $shadow 4px 4px;
+  }
+}
+
+h1{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin: 0;
+  line-height: 47px;
+  letter-spacing: 2px;
+}
+
+.title{
+  transform: translateX(-50%) rotate(-10deg);
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+
+  span {
+    transform: skew(-10deg);
+    display: block;
+    float: left;
+    text-shadow: $shadow 1px 1px, $shadow 2px 2px, $shadow 3px 3px, $shadow 4px 4px, $shadow 5px 5px, $shadow 6px 6px;
+    min-width: 10px;
+    min-height: 10px;
+    position: relative;
+  }
+}
+
+.title{
+  &:nth-child(1){
+    color: $red;
+  }
+  &:nth-child(2){
+    color: $green;
+  }
+  &:nth-child(3){
+    color: $yellow;
+  }
